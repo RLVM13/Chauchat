@@ -1,7 +1,8 @@
 const cargador = ["!Pium", "!Pium", "!Pium", "!Pium", "!Pium", "!Pium", "!Pium",];
-let c;
-let encasquillada = Math.random();
-let caliente;
+let c; //numero de disparos
+let encasquillada = Math.random(); // 80% se atasca
+let caliente=0; //Cada 3 disparos se para y evitar calentamiento
+
 function chauchat(c) {
     console.log(encasquillada);
     while (encasquillada > 0.8) {
@@ -14,5 +15,4 @@ function chauchat(c) {
     console.log("Illo, me he quedao pillá!");
 }
 
-chauchat(5);
-
+chauchat(6);
